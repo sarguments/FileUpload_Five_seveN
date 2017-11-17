@@ -32,6 +32,7 @@ CTcpSocket* CTcpSocket::Accept(SOCKADDR_IN* inFromAddress)
 
 	if (newSocket != INVALID_SOCKET)
 	{
+		CCmdStart::CmdDebugText(L"CTcpSocket::Accept", true);
 		return new CTcpSocket(newSocket);
 	}
 	else
@@ -49,7 +50,7 @@ int	CTcpSocket::Send(const void* inData, size_t inLen)
 		CCmdStart::CmdDebugText(L"CTcpSocket::Send", false);
 		return -1;
 	}
-	CCmdStart::CmdDebugText(L"send", true);
+	CCmdStart::CmdDebugText(L"CTcpSocket::Send", true);
 
 	return bytesSentCount;
 }
@@ -62,6 +63,8 @@ int	CTcpSocket::Receive(void* inData, size_t inLen)
 		CCmdStart::CmdDebugText(L"CTcpSocket::Receive", false);
 		return -1;
 	}
+	CCmdStart::CmdDebugText(L"CTcpSocket::Receive", true);
+
 	return bytesReceivedCount;
 }
 
