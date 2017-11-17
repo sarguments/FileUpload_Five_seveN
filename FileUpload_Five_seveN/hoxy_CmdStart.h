@@ -6,7 +6,7 @@ public:
 	CCmdStart();
 	~CCmdStart();
 
-	static void CmdDebugText(WCHAR* text, bool bParam);
+	static void CmdDebugText(WCHAR* inText, bool bParam);
 
 private:
 };

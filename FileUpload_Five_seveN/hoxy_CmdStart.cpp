@@ -5,6 +5,7 @@
 CCmdStart::CCmdStart()
 {
 	//_wsetlocale(LC_ALL, L"");
+	// 처음 한번만
 	std::locale::global(std::locale(""));
 	CCmdStart::CmdDebugText(L"Locale Init", true);
 

@@ -1,5 +1,6 @@
 #pragma once
 
+// 구버전 제외
 #define WIN32_LEAN_AND_MEAN
 
 #include <Windows.h>
@@ -17,5 +18,5 @@ using std::endl;
 
 #include "hoxy_CmdStart.h"
 
-#include "TCPSocket.h"
-#include "SocketUtil.h"
+#include "hoxy_TcpSock.h"
+#include "hoxy_SockUtill.h"

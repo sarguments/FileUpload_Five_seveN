@@ -12,7 +12,7 @@ public:
 	int	Send(const void* inData, size_t inLen);
 	int	Receive(void* inBuffer, size_t inLen);
 private:
-	friend class CSocketUtil;
+	friend class CSockUtill;
 	CTcpSocket(SOCKET inSocket) : mSocket(inSocket) {}
 	SOCKET mSocket;
 };

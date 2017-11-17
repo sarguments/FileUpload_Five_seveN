@@ -27,10 +27,10 @@
     <ClInclude Include="hoxy_Header.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="SocketUtil.h">
+    <ClInclude Include="hoxy_SockUtill.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="TCPSocket.h">
+    <ClInclude Include="hoxy_TcpSock.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -41,13 +41,13 @@
     <ClCompile Include="FileUpload_Five_seveN.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="SocketUtil.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="TCPSocket.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="hoxy_CmdStart.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="hoxy_SockUtill.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="hoxy_TcpSock.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

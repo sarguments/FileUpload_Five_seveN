@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "hoxy_Header.h"
 
-BOOL CSocketUtil::DomainToIP(WCHAR * szDomain, IN_ADDR * pAddr)
+BOOL CSockUtill::DomainToIP(WCHAR * szDomain, IN_ADDR * pAddr)
 {
 	ADDRINFOW* pAddrInfo;
 	SOCKADDR_IN* pSockAddr;
@@ -15,24 +15,24 @@ BOOL CSocketUtil::DomainToIP(WCHAR * szDomain, IN_ADDR * pAddr)
 	return TRUE;
 }
 
-bool CSocketUtil::WSAStart()
+bool CSockUtill::WSAStart()
 {
 	WSADATA wsaData;
 	int iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
 	if (iResult != NO_ERROR)
 	{
-		CCmdStart::CmdDebugText(L"Starting Up", false);
+		CCmdStart::CmdDebugText(L"WSAStartup", false);
 		return false;
 	}
 	return true;
 }
 
-void CSocketUtil::CleanUp()
+void CSockUtill::CleanUp()
 {
 	WSACleanup();
 }
 
-CTcpSocket* CSocketUtil::CreateTCPSocket(e_SocketAddressFamily inFamily)
+CTcpSocket* CSockUtill::CreateTCPSocket(e_SocketAddressFamily inFamily)
 {
 	SOCKET tcpSocket = socket(inFamily, SOCK_STREAM, IPPROTO_TCP);
 
@@ -42,7 +42,7 @@ CTcpSocket* CSocketUtil::CreateTCPSocket(e_SocketAddressFamily inFamily)
 	}
 	else
 	{
-		CCmdStart::CmdDebugText(L"SocketUtil::CreateTCPSocket", false);
+		CCmdStart::CmdDebugText(L"CSockUtill::CreateTCPSocket", false);
 		return nullptr;
 	}
 }

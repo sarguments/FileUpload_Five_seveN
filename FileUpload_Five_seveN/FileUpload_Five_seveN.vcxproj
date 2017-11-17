@@ -145,22 +145,22 @@
   <ItemGroup>
     <ClInclude Include="hoxy_CmdStart.h" />
     <ClInclude Include="hoxy_Header.h" />
-    <ClInclude Include="SocketUtil.h" />
+    <ClInclude Include="hoxy_SockUtill.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="TCPSocket.h" />
+    <ClInclude Include="hoxy_TcpSock.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FileUpload_Five_seveN.cpp" />
     <ClCompile Include="hoxy_CmdStart.cpp" />
-    <ClCompile Include="SocketUtil.cpp" />
+    <ClCompile Include="hoxy_SockUtill.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="TCPSocket.cpp" />
+    <ClCompile Include="hoxy_TcpSock.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

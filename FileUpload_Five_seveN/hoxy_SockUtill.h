@@ -18,7 +18,7 @@ ex)
 
 	wcout << L"SERVER IP : " << proIP << endl;
 */
-class CSocketUtil
+class CSockUtill
 {
 public:
 	static BOOL DomainToIP(WCHAR* szDomain, IN_ADDR* pAddr);
