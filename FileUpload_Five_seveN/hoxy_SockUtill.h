@@ -6,6 +6,9 @@ enum e_SocketAddressFamily
 	INET6 = AF_INET6
 };
 
+// == MEMO ==
+// 1. sin_addr.S_un.S_addr == sin_addr.s_addr
+
 /*
 ex)
 	WCHAR serverDomain[] = L"procademyserver.iptime.org";
